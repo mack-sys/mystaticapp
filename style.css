@@ -1,0 +1,225 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #2D89EF;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Services section */
+.services {
+    padding: 40px 20px;
+    background-color: #f4f7f9;
+}
+
+.services h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 220px;
+}
+
+.card h3 {
+    color: #2D89EF;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* Existing styles remain unchanged */
+
+/* Added CSS animations for cards */
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 220px;
+    opacity: 0; /* Start invisible */
+    transform: translateY(50px); /* Start from below */
+    transition: all 0.6s ease-out; /* Smooth transition */
+}
+
+.card.animate {
+    opacity: 1;
+    transform: translateY(0); /* Move to original position */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f7f9;
+}
+
+/* Header styles with fade-in animation */
+.header {
+    background-color: #2D89EF;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    opacity: 0; /* Start invisible */
+    transform: translateY(-50px); /* Start above */
+    transition: all 0.8s ease-out; /* Smooth transition */
+}
+
+.header.visible {
+    opacity: 1;
+    transform: translateY(0); /* Move to original position */
+}
+
+.header h1 {
+    font-size: 2.5em;
+}
+
+.header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Section title zoom-in animation */
+.section-title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    opacity: 0; /* Start invisible */
+    transform: scale(0.8); /* Start small */
+    transition: all 0.7s ease-out;
+}
+
+.section-title.visible {
+    opacity: 1;
+    transform: scale(1); /* Zoom in to normal size */
+}
+
+/* Services section */
+.services {
+    padding: 40px 20px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 220px;
+    opacity: 0; /* Start invisible */
+    transform: translateY(50px); /* Start from below */
+    transition: all 0.6s ease-out; /* Smooth transition */
+}
+
+.card.animate {
+    opacity: 1;
+    transform: translateY(0); /* Move to original position */
+}
+
+/* Hover effects on service cards */
+.card:hover {
+    transform: translateY(-10px); /* Lift the card slightly */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+}
+
+/* Footer styles with fade-in animation */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    opacity: 0; /* Start invisible */
+    transform: translateY(50px); /* Start below */
+    transition: all 0.8s ease-out; /* Smooth transition */
+}
+
+.footer.visible {
+    opacity: 1;
+    transform: translateY(0); /* Move to original position */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
